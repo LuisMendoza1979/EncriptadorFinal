@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo" >
+            <img class="imagen_logo" src="imagenes/LogoAlura.png" alt="Logo Alura">
+            <p>Encriptador de texto</p>
+        </div>
+    </header>
+
+<main class="contenido">
+    <section class="texto">
+        <textarea class="area_texto" rows="20" cols="30" placeholder="Ingrese el texto aquí"></textarea>
+        <div class="informacion">
+            <img class="instrucciones" src="imagenes/Exclamacion.png" alt="Signo exclamación">
+            <p>Solo letras minúsculas y sin acentos</p>
+        </div>
+        <div class="botones">
+            <button onclick="btnEncriptar();" class="botones_especificos">Encriptar</button>
+            <button onclick="btnDesencriptar();" class="botones_especificos">Desencriptar</button>
+        </div>
+
+    </section>
+    <section class="mensaje">
+        <textarea class="area_mensaje" rows="20" cols="30" ></textarea>
+        <div class="instrucciones_mensaje">
+            <h3 class=".sin_texto" >No se encontró mensaje</h3>
+            <h5 class=".poner_texto" >Ingrese el mensaje que desea encriptar o <br>desencriptar</h5>
+        </div>
+        <button onclick="copiar();" class="botones_especificos" id="copiar" style="visibility: hidden;">Copiar</button>
+    </section>
+</main>
+    
+<footer>
+    <h5>Desarrollado por: Luis Alejandro Mendoza Mendoza</h5>
+    <h5>Versión: 1.0</h5>
+</footer>
+
+    <script src="app.js"></script>
+
+</body>
+</html>

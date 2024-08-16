@@ -1,0 +1,388 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(imagenes/Fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo{
+    display: flex;
+    color: aliceblue;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 3rem;
+}
+
+.imagen_logo{
+    margin-left: 20px;
+    width: 5%;
+    height:5%;
+}
+
+.contenido{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 300px;
+}
+
+.area_texto{
+    width: 40vw;
+    height:60vh;
+    border-radius: 24px;
+    background-color:beige;
+    font-size: 2rem;
+}
+
+.informacion{
+    display: flex;
+    color: antiquewhite;
+    font-size: 1.5rem;
+    gap: 20px;
+    align-items: center;
+}
+
+.instrucciones{
+    width: 40px;
+    height: 40px;
+}
+
+.botones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.botones_especificos{
+    width: 300px;
+    height:70px;
+    border-radius: 24px;
+    font-size: 2rem;
+    border: 2px solid blue;
+    background-color: aquamarine;
+    color: blue;
+    font-weight: 600px;
+}
+
+.botones_especificos:hover{
+    background-color: gold;
+    width: 200px;
+    
+}
+
+.instrucciones_mensaje{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: grey;
+    position: absolute;
+    margin: 250px 10px 10px 30px;
+    font-size: 2rem;
+    gap: 20px;
+
+}
+
+#copiar{
+    position: absolute;
+    margin-top: 500px;
+}
+
+.area_mensaje{
+    width: 40vw;
+    height:80vh;
+    border-radius: 24px;
+    background-color:beige;
+    background-image: url(imagenes/Muñeco.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 70%;
+    font-size: 2rem;
+}
+
+.mensaje{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+}
+.area_texto:focus{
+    outline: none;
+}
+
+.area_mensaje:focus{
+    outline: none;
+}
+
+
+::placeholder{
+    font-size: 2rem;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px 10px 30px;
+    color: antiquewhite;
+    font-size: 1rem;
+}
+
+@media screen and (min-width: 480px){
+
+    .logo{
+        display: flex;
+        color: aliceblue;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 1rem;
+    }
+
+    .imagen_logo{
+        margin-left: 30px;
+        width: 120%;
+        height:120%;
+    }
+
+    .contenido{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .texto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:center;
+        gap: 10px;
+    }
+    .area_texto{
+        width: 60vw;
+        height:10vh;
+        border-radius: 20px;
+        background-color:beige;
+    }
+
+    .area_mensaje{
+        width: 10vw;
+        height:20vh;
+        border-radius: 20px;
+        background-color:beige;
+        background-image: url(imagenes/Muñeco.png);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: 50%;
+    }
+    
+    .instrucciones_mensaje{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: grey;
+        position: absolute;
+        margin: 100px 10px 10px 30px;
+        font-size: 1.25rem;
+        gap: 2px;
+    
+    }
+    
+    .informacion{
+        display: flex;
+        color: antiquewhite;
+        font-size: 1.25rem;
+        gap: 10px;
+        justify-content:left;
+        align-items:center;
+        margin-left: -120px;
+    }
+    
+    .instrucciones{
+        width: 10px;
+        height: 20px;
+    }
+
+    .botones{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .botones_especificos{
+        width: 220px;
+        height:60px;
+        border-radius: 24px;
+        font-size: 1.5rem;
+        border: 2px solid blue;
+        background-color: aquamarine;
+        color: blue;
+        font-weight: 600px;
+    }
+
+    #copiar{
+        position: absolute;
+        margin-top: 230px;
+    }
+    
+    .botones_especificos:hover{
+        background-color: gold;
+        width: 200px;
+        
+    }
+
+    footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 10px 10px 10px;
+        color: antiquewhite;
+        font-size: 1rem;
+    }
+
+    
+
+}
+
+@media only screen and (max-width: 768px){
+
+    
+    .logo{
+        display: flex;
+        color: aliceblue;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 1.5rem;
+    }
+
+    .imagen_logo{
+        margin-left: 70px;
+        width: 5%;
+        height:5%;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    .contenido{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .texto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:center;
+        gap: 10px;
+    }
+    .area_texto{
+        width: 80vw;
+        height:50vh;
+        border-radius: 20px;
+        background-color:beige;
+    }
+
+    .area_mensaje{
+        width: 80vw;
+        height:30vh;
+        border-radius: 20px;
+        background-color:beige;
+        background-image: url(imagenes/Muñeco.png);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: 50%;
+    }
+    
+    .instrucciones_mensaje{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: grey;
+        position: absolute;
+        margin: 100px 10px 10px 30px;
+        font-size: 1.25rem;
+        gap: 2px;
+    
+    }
+    
+    .informacion{
+        display: flex;
+        color: antiquewhite;
+        font-size: 1.25rem;
+        gap: 10px;
+        justify-content:left;
+        align-items:center;
+        margin-left: -210px;
+    }
+    
+    .instrucciones{
+        width: 30px;
+        height: 30px;
+    }
+
+    .botones{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .botones_especificos{
+        width: 280px;
+        height:60px;
+        border-radius: 24px;
+        font-size: 1.5rem;
+        border: 2px solid blue;
+        background-color: aquamarine;
+        color: blue;
+        font-weight: 600px;
+    }
+
+    #copiar{
+        position: absolute;
+        margin-top: 230px;
+    }
+    
+    .botones_especificos:hover{
+        background-color: gold;
+        width: 200px;
+        
+    }
+
+    footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 25px 5px 25px;
+        color: antiquewhite;
+        font-size: 1rem;
+    }
+
+    
+
+}
